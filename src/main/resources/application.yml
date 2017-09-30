@@ -1,0 +1,15 @@
+cors:
+    allowed-origins: "*"
+    allowed-methods: "*"
+    allowed-headers: "*"
+    exposed-headers:
+    allow-credentials: true
+    max-age: 1800
+
+jwt:
+    TTLMillis: 3600000
+    audience: "测试系统"
+    base64Security: "base64"
+spring:
+  profiles:
+    active: prod
