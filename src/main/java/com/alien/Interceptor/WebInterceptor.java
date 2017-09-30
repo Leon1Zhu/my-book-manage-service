@@ -27,7 +27,7 @@ public class WebInterceptor extends HandlerInterceptorAdapter {
      *返回true，表示继续流程，调用下一个拦截器或者处理器。
      *返回false，表示流程中断，通过response产生响应。
      */
-    @Override
+  /*  @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
                              Object handler) throws Exception {
         System.out.println("-------------------preHandle");
@@ -63,7 +63,7 @@ public class WebInterceptor extends HandlerInterceptorAdapter {
         outputStream.write(dataByteArr);//使用OutputStream流向客户端输出字节数组
         return response;
     }
-
+*/
     /**
      *当前请求进行处理之后，也就是Controller 方法调用之后执行，
      *但是它会在DispatcherServlet 进行视图返回渲染之前被调用。
